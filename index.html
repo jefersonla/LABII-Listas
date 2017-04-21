@@ -1,0 +1,596 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title> Lista Atividades SPOJ - LAB II </title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1 id="cabecalho"> Lista Atividades MATA80 - Laboratório de Programação II / 2016.2 </h1>
+    <h2 id="total"> Total Questoes Feitas ==> </h2>
+    <hr>
+
+    <script type="text/javascript">
+        /* Julgadores Cadastrados */
+        var judges = {
+            "SPOJ-BR"   : "http://br.spoj.com/problems/",
+            "SPOJ-INT"  : "http://www.spoj.com/problems/"
+        };
+
+        /* Lista de Questoes */
+        var listas_questoes = [
+            {
+                id : "Lista_I",
+                titulo : "Lista I - Dynamic Programing",
+                questoes : [
+                    { 
+                        id : "MOEDAS",
+                        titulo: "Moedas", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "DESCULPA",
+                        titulo: "Pedido de Desculpas", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "SEQUENCI",
+                        titulo: "Sequencia A", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "PAL",
+                        titulo: "Palíndrome", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    { 
+                        id : "COINS",
+                        titulo: "Bytelandian gold coins", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "ACODE",
+                        titulo: "Alphacode", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "FARIDA",
+                        titulo: "Princess Farida", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "DANGER",
+                        titulo: "In Danger", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "GNYR09F",
+                        titulo: "Adjacent Bit Counts", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "KNAPSACK",
+                        titulo: "The Knapsack Problem", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "ANARC05H",
+                        titulo: "Chop Ahoy! Revisited!", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "AMR11A",
+                        titulo: "Magic Grid", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "PRUBALL",
+                        titulo: "Esferas", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "NKLEAVES",
+                        titulo: "Leaves", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "INUMBER",
+                        titulo: "Interesting number", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "PALDR",
+                        titulo: "Even Palindrome", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "PSYCHO3",
+                        titulo: "Make Psycho", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    { 
+                        id : "SOCOLA",
+                        titulo: "Chocolate", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    }
+                ]
+            },
+            {
+                id : "Lista_II",
+                titulo : "Lista II - Binary Search",
+                questoes : [
+                    {
+                        id : "BSEARCH1",
+                        titulo: "Binary search", 
+                        judge: "SPOJ-INT",
+                        status : true 
+                    },
+                    {
+                        id : "PROIBIDO",
+                        titulo: "Número Proibido", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "CARTEI14",
+                        titulo: "Carteiro", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "ALVO13",
+                        titulo: "Tiro ao Alvo", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "CUBERT",
+                        titulo: "Cube Root", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "TRIGALGE",
+                        titulo: "Easy Calculation", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "FACVSPOW",
+                        titulo: "Factorial vs Power", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "MARIO",
+                        titulo: "Mário", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "SHREK",
+                        titulo: "Shrek", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    }
+                ]
+            },
+            {
+                id : "Lista_III",
+                titulo : "Lista III - Longest Common Subsequence",
+                questoes : [
+                    {
+                        id : "EELCS",
+                        titulo: "Easy Longest Common Subsequence", 
+                        judge: "SPOJ-INT",
+                        status : true 
+                    },
+                    {
+                        id : "PARQUE",
+                        titulo: "Parque Jurássico", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "SAMER08D",
+                        titulo: "DNA Sequences", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "IOIPALIN",
+                        titulo: "Palindrome 2000", 
+                        judge: "SPOJ-INT",
+                        status : true 
+                    },
+                    {
+                        id : "XMEN",
+                        titulo: "X-MEN", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "AIBOHP",
+                        titulo: "Aibohphobia", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "LCS0",
+                        titulo: "Longest Common Subsequence", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    }
+                ]
+            },
+            {
+                id : "Lista_IV",
+                titulo : "Lista IV - Edit Distance",
+                questoes : [
+                    {
+                        id : "EDIST",
+                        titulo: "Edit distance", 
+                        judge: "SPOJ-INT",
+                        status : true 
+                    },
+                    {
+                        id : "EDDIST",
+                        titulo: "Edit Distance", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "MC",
+                        titulo: "Minimum Cost", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "EDIT",
+                        titulo: "Edit Distance Again", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "ADVEDIST",
+                        titulo: "Advanced Edit Distance", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    }
+                ]
+            },
+            {
+                id : "Lista_V",
+                titulo : "Lista V - Text Algorithms",
+                questoes : [
+                    {
+                        id : "NHAY",
+                        titulo: "A Needle in the Haystack", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "ARDA1",
+                        titulo: "The hunt for Gollum", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "FINDSR",
+                        titulo: "Find String Roots", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "FILRTEST",
+                        titulo: "File Recover Testing", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "Extend to Palindrome",
+                        titulo: "Extend to Palindrome", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    }
+                ]
+            },
+            {
+                id : "Lista_VI",
+                titulo : "Lista VI - Path Finding",
+                questoes : [
+                    {
+                        id : "IREVIR",
+                        titulo: "Ir e vir", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "ENERGIA",
+                        titulo: "Transmissão de Energia", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "MESA",
+                        titulo: "Mesa da Sra Montagny!", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "PEDAGIO",
+                        titulo: "Pedágio", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "NUMERDOS",
+                        titulo: "Número de Erdos", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "DUENDE",
+                        titulo: "Duende Perdido", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "NATUREZA",
+                        titulo: "Natureza", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "DENGUE",
+                        titulo: "Dengue", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "ORKUT",
+                        titulo: "Orkut", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    }
+                ]
+            },
+            {
+                id : "Lista_VII",
+                titulo : "Lista VII - Minimum Spanning Tree",
+                questoes : [
+                    {
+                        id : "REDOTICA",
+                        titulo: "Rede ótica", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "MST",
+                        titulo: "Minimum Spanning Tree", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "ULM09",
+                        titulo: "Dark roads", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "CSTREET",
+                        titulo: "Cobbled streets", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "INTERMLG",
+                        titulo: "Interligando a Sildávia", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    }
+                ]
+            },
+            {
+                id : "Lista_VIII",
+                titulo : "Lista VIII - Bridges",
+                questoes : [
+                    {
+                        id : "ENGARRAF",
+                        titulo: "Engarrafamento", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "DESVIO",
+                        titulo: "Desvio de rota", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "PONTES09",
+                        titulo: "Caminho das pontes", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "MINIMO",
+                        titulo: "Final Mundial de 2008", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    }
+                ]
+            },
+            {
+                id : "Lista_IX",
+                titulo : "Lista IX - Flow",
+                questoes : [
+                    {
+                        id : "MANUT",
+                        titulo: "Manutenção", 
+                        judge: "SPOJ-BR",
+                        status : true 
+                    },
+                    {
+                        id : "POLQUERY",
+                        titulo: "Police Query", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    },
+                    {
+                        id : "TUBOS",
+                        titulo: "Série de Tubos", 
+                        judge: "SPOJ-BR",
+                        status : false 
+                    },
+                    {
+                        id : "SUBMERGE",
+                        titulo: "Submerging Islands", 
+                        judge: "SPOJ-INT",
+                        status : false 
+                    }
+                ]
+            }
+        ];
+
+        /* Objeto cabeçalho indica o ponto inicial aonde todos os outros objetos serão inseridos */
+        var cabecalho = document.getElementById("cabecalho");
+
+        /* Total de questoes feitas */
+        var total_questoes = 0;
+        var total_questoes_feitas = 0;
+        var total_questoes_dom = document.getElementById("total");
+
+        /* Corpo da página */
+        var corpo = document.body;
+
+        /* Percorre as listas */
+        for(var i = 0; i < listas_questoes.length; i++){
+            /* Id da lista */
+            var id_lista = listas_questoes[i].id;
+
+            /* Nome da Lista */
+            var nome_lista = listas_questoes[i].titulo;
+            
+            /* Questões disponíveis */
+            var questoes = listas_questoes[i].questoes;
+
+            /* Cria um cabecalho para a questao a ser inserida */
+            var titulo_lista = document.createElement("h3");
+            var titulo_lista_text = document.createTextNode(nome_lista);
+            titulo_lista.appendChild(titulo_lista_text);
+
+            /* Cria a lista ordenada para as questões */
+            var lista_ordenada = document.createElement("ol");
+
+            /* Percorre as questões */
+            var questoes_feitas = 0;
+            for(var j = 0; j < questoes.length; j++){
+                /* Separadores de texto */
+                var separador_doispontos = document.createTextNode(" : ");
+                var separador_hifen = document.createTextNode(" - ");
+
+                /* ID da questão */
+                var id_questao = document.createElement("b");
+                var id_questao_texto = document.createTextNode(questoes[j].id);
+                id_questao.appendChild(id_questao_texto);
+
+                /* Se a questão foi finalizada */
+                var titulo_questao;
+                var titulo_questao_texto = document.createTextNode(questoes[j].titulo);
+                if(questoes[j].status){
+                    /* Titulo da Questão Tachado = Finalizado */
+                    titulo_questao = document.createElement("strike");
+                    titulo_questao.appendChild(titulo_questao_texto);
+
+                    /* Incrementa contador de questões feitas */
+                    questoes_feitas++;
+                }
+                else{
+                    /* Titulo da Questão Itálico = Não Finalizado */
+                    titulo_questao = document.createElement("i");
+                }
+                titulo_questao.appendChild(titulo_questao_texto);
+
+                /* Link para a questão */
+                var link_questao = document.createElement("a");
+                var link_questao_texto = document.createTextNode(questoes[j].judge + " link");
+                link_questao.appendChild(link_questao_texto);
+                link_questao.href = judges[questoes[j].judge] + questoes[j].id + "/";
+
+                /* Cria a questão */
+                var questao = document.createElement("li");
+                questao.appendChild(id_questao);
+                questao.appendChild(separador_doispontos);
+                questao.appendChild(titulo_questao);
+                questao.appendChild(separador_hifen);
+                questao.appendChild(link_questao);
+
+                /* Se a questão já foi feita adiciona o código fonte da resolução */
+                if(questoes[j].status){
+                    /* Outro separador de texto */
+                    var separador_resposta = document.createTextNode(" ==> ");
+
+                    /* Link para a resposta da questão */
+                    var link_resposta = document.createElement("a");
+                    var link_resposta_texto = document.createTextNode("Codigo Fonte da Resposta / C++");
+                    link_resposta.appendChild(link_resposta_texto);
+                    link_resposta.href = "/" + id_lista + "/" + questoes[j].id + ".cpp";
+
+                    /* Adiciona a questão */
+                    questao.appendChild(separador_resposta);
+                    questao.appendChild(link_resposta);
+                }
+
+                /* Adiciona a questão a lista ordenada */
+                lista_ordenada.appendChild(questao);
+            }
+            
+            /* Adiciona lista de questoes feitas ao titulo */
+            var titulo_lista_questoes_feitas = document.createTextNode(" - " + questoes_feitas + "/" + 
+                questoes.length);
+            titulo_lista.appendChild(titulo_lista_questoes_feitas);
+
+            /* Separador listas */
+            var separador_lista = document.createElement("hr");
+
+            /* Adiciona a lista */
+            corpo.appendChild(titulo_lista);
+            corpo.appendChild(lista_ordenada);
+            if((i + 1) != listas_questoes.length){
+                corpo.appendChild(separador_lista);
+            }
+
+            /* Atualiza o total de questoes feitas */
+            total_questoes_feitas += questoes_feitas;
+            total_questoes += questoes.length;
+        }
+
+        /* Adiciona todas as questões feitas até o momento */
+        var porcentagem_completo = Math.round(total_questoes_feitas * 100 / total_questoes);
+        var nota_total = 5;
+        var nota_final = (nota_total * porcentagem_completo / 100);
+        var total_questoes_texto = document.createTextNode(total_questoes_feitas + "/" +
+            total_questoes + " - " + nota_final + " - " + porcentagem_completo + "% completo");
+        total_questoes_dom.appendChild(total_questoes_texto);
+    </script>
+
+</body>
+</html>
